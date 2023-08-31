@@ -1,5 +1,5 @@
 {% set name = "lstchain" %}
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
-  sha256: 48e277d28e162dd7c9a3fb40da500584720d4d0c29cfd5a2a39580f40660dd1e
+  sha256: cb5a37bd0ae1be4801c6ed89287cb4baaffa24a03f49da1125b2e21d4bb58912
 
 build:
   noarch: python
