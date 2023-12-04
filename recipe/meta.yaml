@@ -67,7 +67,7 @@ requirements:
     - h5py
     - iminuit >=2
     - joblib >=1.2.0,<1.3.dev0
-    - matplotlib-base >=3.7,<4.dev0
+    - matplotlib-base >=3.7,<3.8.0dev0
     - numba
     - numpy
     - pandas
@@ -80,6 +80,7 @@ requirements:
     - toml
     - pymongo
     - pyparsing
+    - blosc2 # seems to be a missing requirement of the tables package
 
 test:
   imports:
