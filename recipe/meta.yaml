@@ -80,7 +80,7 @@ requirements:
     - toml
     - pymongo
     - pyparsing
-    - blosc2 # seems to be a missing requirement of the tables package
+    - python-blosc2 # seems to be a missing requirement of the tables package
 
 test:
   imports:
