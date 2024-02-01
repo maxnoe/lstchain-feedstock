@@ -73,7 +73,7 @@ requirements:
     - pandas
     - protobuf >=3.20.0,<3.21.dev0
     - pyirf >=0.10.0,<0.11.0dev0
-    - scipy >=1.8
+    - scipy >=1.8,<1.12
     - seaborn
     - scikit-learn >=1.2,<2.dev0
     - pytables
