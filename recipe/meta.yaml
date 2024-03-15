@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
   sha256: 421f7bfe6f14e495181c2fbf54b4783bebaa772b556dbb119ac32534e2511236
+  patches:
+    - ./0001-no-protobuf-pin.patch
 
 build:
   noarch: python
@@ -71,7 +73,6 @@ requirements:
     - numba
     - numpy
     - pandas
-    - protobuf >=3.20.0,<3.21.dev0
     - pyirf >=0.10.0,<0.11.0dev0
     - scipy >=1.8,<1.12
     - seaborn
