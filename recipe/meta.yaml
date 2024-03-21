@@ -1,5 +1,5 @@
 {% set name = "lstchain" %}
-{% set version = "0.10.8" %}
+{% set version = "0.10.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
-  sha256: 421f7bfe6f14e495181c2fbf54b4783bebaa772b556dbb119ac32534e2511236
+  sha256: 80660e0420a82613996e42dc7026955f651485a2971339e62a527578e2508738
   patches:
     - ./0001-no-protobuf-pin.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - lstchain_create_run_summary = lstchain.scripts.lstchain_create_run_summary:main
     - lstchain_mc_r0_to_dl1 = lstchain.scripts.lstchain_mc_r0_to_dl1:main
