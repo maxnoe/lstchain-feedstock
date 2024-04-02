@@ -82,6 +82,7 @@ requirements:
     - pymongo
     - pyparsing
     - python-blosc2 # seems to be a missing requirement of the tables package
+    - protozfits >=2.5,<3.dev0
 
 test:
   imports:
