@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lstchain-{{ version }}.tar.gz
   sha256: 80660e0420a82613996e42dc7026955f651485a2971339e62a527578e2508738
-  patches:
-    - ./0001-no-protobuf-pin.patch
 
 build:
   noarch: python
