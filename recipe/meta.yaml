@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - lstchain_create_run_summary = lstchain.scripts.lstchain_create_run_summary:main
     - lstchain_mc_r0_to_dl1 = lstchain.scripts.lstchain_mc_r0_to_dl1:main
@@ -79,7 +79,6 @@ requirements:
     - toml
     - pymongo
     - pyparsing
-    - python-blosc2 # seems to be a missing requirement of the tables package
     - protozfits >=2.5,<3.dev0
 
 test:
